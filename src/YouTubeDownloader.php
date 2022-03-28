@@ -54,9 +54,7 @@ class YouTubeDownloader
                 'html5' => 1,
                 'video_id' => $video_id,
                 'eurl' => 'https://youtube.googleapis.com/v/' . $video_id,
-                'el' => 'embedded', // or detailpage. default: embedded, will fail if video is not embeddable
-                'c' => 'TVHTML5',
-                'cver' => '6.20180913'
+                'el' => 'embedded' // or detailpage. default: embedded, will fail if video is not embeddable
             ]));
 
         return new GetVideoInfo($response);
